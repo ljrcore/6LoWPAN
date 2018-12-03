@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>用户注册</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700'>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
+
+    <body>
+
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="logo span6">
+                        <h1><a href="#">6LoWPAN 物联网数据平台 <span class="red"></span></a></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+        <div class="register-container container">
+            <div class="row">
+                <div class="iphone span3">
+                    <img src="assets/img/iphone.png" alt="">
+                </div>
+				<div class="register span6">
+                    <form name="RegForm" method="post" action="reg.php" onSubmit="return InputCheck(this)">
+                        <h2>用户注册<span class="red"><strong></strong></span></h2>
+                        
+						<label for="username">用户名</label>
+                        <input type="text" id="username" name="username" placeholder="请输入用户名...3-15字符长度，支持汉字、字母、数字">
+						
+						<label for="password">密码</label>
+                        <input type="password" id="password" name="password" placeholder="请输入密码...不得少于6位">  
+                        
+						<label for="repass">重复密码</label>
+                        <input type="password" id="repass" name="repass" placeholder="请再次输入密码...">
+						
+						<label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="请输入邮箱...">
+                        <button type="submit" name="submit" >提交注册</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.8.2.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scriptss.js"></script>
+
+    </body>
+
+</html>
+
